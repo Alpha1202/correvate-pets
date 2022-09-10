@@ -1,0 +1,17 @@
+<div class="card-wrapper">
+  <mat-card class="card">
+
+    <h2 mat-dialog-title>Select Status</h2>
+
+    <mat-form-field class="status-dialog-select-field" appearance="fill">
+      <mat-label>Choose a status</mat-label>
+      <mat-select name="status" [(value)]="status">
+        <mat-option *ngFor="let status of data" [value]="status.value">
+          {{status.item}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button class="status-dialog-button" (click)="closeDialog()">Continue</button>
+
+  </mat-card>
+</div>

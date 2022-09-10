@@ -1,0 +1,11 @@
+.pet-card {
+  max-width: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.pet-card-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

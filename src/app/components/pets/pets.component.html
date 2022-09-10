@@ -1,0 +1,7 @@
+<app-filter-form></app-filter-form>
+<mat-grid-list class="pet-list-container" [cols]="breakpoint" rowHeight="120px"
+  (window:resize)="onResize($event.target)">
+  <mat-grid-tile class="pet-tile" *ngFor="let pet of pets">
+    <app-pet [pet]="pet"></app-pet>
+  </mat-grid-tile>
+</mat-grid-list>

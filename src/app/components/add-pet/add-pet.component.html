@@ -1,0 +1,32 @@
+<div class="card-wrapper">
+  <mat-card class="card">
+    <div class="card-content">
+      <h2>Create new pet</h2>
+      <form (ngSubmit)="onSubmit()" class="add-pet-form">
+        <mat-form-field class="add-margin" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Enter pet name" name="name" [(ngModel)]="name" />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Image URL</mat-label>
+          <input matInput name="url" [(ngModel)]="image_url" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Status</mat-label>
+          <mat-select name="status" [(value)]="status">
+            <mat-option *ngFor="let status of petStatus" [value]="status.value">
+              {{status.item}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="add-pet-buttons">
+          <button mat-stroked-button class="add-pet-stroked" (click)="onCancel">CANCEL</button>
+          <button mat-raised-button class="add-pet-button">ADD</button>
+        </div>
+
+      </form>
+    </div>
+  </mat-card>
+</div>

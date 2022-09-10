@@ -1,0 +1,8 @@
+<mat-card class="pet-card" matRipple (click)="openPetDetailsDialog()" [matRippleCentered]>
+  <mat-card-header>
+    <mat-card-title>{{ pet.name }}</mat-card-title>
+    <mat-card-subtitle class="pet-card-subtitle">status: {{ pet.status }}
+      <mat-icon color="{{status_icon_color}}">{{ status_icon }}</mat-icon>
+    </mat-card-subtitle>
+  </mat-card-header>
+</mat-card>

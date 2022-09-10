@@ -1,0 +1,19 @@
+.filter-button-container {
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 85%;
+}
+
+.filter-button {
+    background-color: white;
+    color: #3f51b5;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}

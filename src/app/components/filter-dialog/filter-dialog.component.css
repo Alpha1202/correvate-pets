@@ -1,0 +1,38 @@
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25rem;
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.status-dialog-container {
+  display: flex;
+}
+
+.status-dialog-select-field {
+  width: auto;
+}
+
+.status-dialog-button {
+  background-color: #3f51b5;
+  color: white;
+  width: auto;
+}

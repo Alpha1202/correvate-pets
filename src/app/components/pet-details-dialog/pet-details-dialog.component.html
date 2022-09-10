@@ -1,0 +1,25 @@
+<mat-card class="pet-details-card">
+  <mat-card-header class="pet-details-card-header">
+    <div mat-card-avatar class="pet-details-card-header-image-wrapper">
+      <img class="pet-details-card-header-image" mat-card-image src="{{ pet_img }}" alt="Photo of {{ data.name }}" />
+    </div>
+    <mat-card-title class="pet-details-card-title">{{
+      data.name
+      }}</mat-card-title>
+    <mat-card-subtitle class="pet-details-card-subtitle">status: {{ data.status }}
+      <mat-icon color="{{ status_icon_color }}">{{
+        status_icon
+        }}</mat-icon>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{ pet_img }}" alt="Photo of {{ data.name }}" />
+
+  <mat-card-actions>
+    <mat-label>Tags: </mat-label>
+    <mat-chip-list #chipList aria-label="pet keyword" multiple>
+      <mat-chip *ngFor="let tag of data.tags">
+        {{ tag.name }}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card-actions>
+</mat-card>

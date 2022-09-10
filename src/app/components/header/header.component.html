@@ -1,0 +1,12 @@
+<div class="header">
+  <a href="#default" class="logo">CORREVATE PETS</a>
+  <div class="header-right header-big-display" *ngIf="isAuthenticated">
+    <button mat-raised-button routerLink="/create-pet">Create New</button>
+    <button mat-stroked-button (click)="logout()" class="logout-button">
+      Logout
+    </button>
+  </div>
+  <div class="header-small-display" *ngIf="isAuthenticated">
+    <mat-icon class="header-menu-icon" (click)="openDialog()">menu</mat-icon>
+  </div>
+</div>

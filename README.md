@@ -1,27 +1,54 @@
-# AngularCrashCourse
+# Correvate Pets
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+> ### Correvate Pets is your one-stop pet store.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This codebase was created to demonstrate a fully fledged application built with Angular, Angular material and ngxs for state management that interacts with an actual backend server including CRUD operations, authentication, and routing. 
 
-## Code scaffolding
+# How it works
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This app allow users to login and displays a list of pets by status: "available", "pending", "sold". Users can also create new pets.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Getting started
 
-## Running unit tests
+- Ensure you have the [Angular CLI](https://github.com/angular/angular-cli#installation) installed globally.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Using the docs [here](https://hub.docker.com/r/swaggerapi/petstore/) as guide, pull the petstore docker image using the commands in the docs
 
-## Running end-to-end tests
+- CD into the app and run `npm install` `yarn install`  to resolve all dependencies (might take a minute).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
 
-## Further help
+### Building the project
+- Run `ng build` to build the project. 
+- Use the `-prod` flag for a production build.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Functionality overview
+
+This application is a solution to correvate's software engineer (angular) test called "Correvate Pets". It uses the [petstore](https://hub.docker.com/r/swaggerapi/petstore/) API for all requests, including authentication.
+
+**General functionality:**
+
+- Login a user (login page on the landing page)
+- Logout a user
+- Create new pet
+- Get and display pets by status
+- Get and display a given pets  details
+
+
+**The general page breakdown looks like this:**
+
+- Login page (URL: /#/ )
+- View Pets (URL: /#/pets )
+    - Displays a list of pets of the same status in a card
+    - Shows a given pet's details when a pet's card is clicked
+- Create new pet page (URL: /#/create-pet )
+    - Shows a form for adding new pet
+<br />
+
+
+## Developer
+
+Nzubechukwu Nnamani
